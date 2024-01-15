@@ -34,7 +34,9 @@ for (let i = 0; i < images.length; i++) {
   makeImg.setAttribute("alt", `${images[i].alt}`);
   makeImg.setAttribute("width", "360px");
   makeImg.setAttribute("height", "300px");
+  makeImg.classList.add("image");
   const makeLi = document.createElement("li");
+  makeLi.classList.add("img-list");
   makeLi.appendChild(makeImg);
   array.push(makeLi);
 }
