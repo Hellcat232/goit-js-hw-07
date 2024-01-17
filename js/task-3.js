@@ -4,8 +4,10 @@ const output = document.querySelector("span");
 input.addEventListener("input", typeInputHandler);
 
 function typeInputHandler() {
-  const type = input.value.trim();
-  if (type === "") type = "Anonymous";
-
-  output.innerHTML = type;
+  const inputType = input.value.trim();
+  if (inputType === "") {
+    return (inputType = "Anonymous");
+  } else {
+    output.innerHTML = inputType;
+  }
 }
