@@ -16,7 +16,7 @@ let boxHeight = 30;
 
 createBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  if (input.value < 1 && input.value > 100) return input === "";
+  if (input.value < 1 && input.value > 100) return input.value === "";
   const values = input.value;
   createBoxes(values);
 });
