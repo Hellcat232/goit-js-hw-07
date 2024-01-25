@@ -32,8 +32,7 @@ for (let i = 0; i < images.length; i++) {
   const makeImg = document.createElement("img");
   makeImg.setAttribute("src", `${images[i].url}`);
   makeImg.setAttribute("alt", `${images[i].alt}`);
-  makeImg.setAttribute("width", "360px");
-  makeImg.setAttribute("height", "300px");
+
   makeImg.classList.add("image");
   const makeLi = document.createElement("li");
   makeLi.classList.add("img-list");
